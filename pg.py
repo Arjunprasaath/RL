@@ -96,8 +96,8 @@ policy_model = torch.load(f"policy_model_Adam_{epochs}.pt", weights_only= False)
 env = gym.make("LunarLander-v3", render_mode="human")
 observation, info = env.reset()
 done = False
+
 while not done:
-    # this is where you would insert your policy
     obs_tensor = torch.FloatTensor(observation)
     logits = policy_model(obs_tensor)
     policy_dis = get_policy_dis(logits)
