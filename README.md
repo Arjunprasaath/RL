@@ -2,7 +2,7 @@
 Implementation of RL algorithms
 
 - [x] Naive Policy Gradient
-- [] Reward-to-Go Policy Gradient
+- [x] Reward-to-Go Policy Gradient
 - [] TRPO
 - [] PPO
 
