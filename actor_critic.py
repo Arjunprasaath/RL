@@ -8,7 +8,7 @@ from torch.optim import SGD, Adam
 import torch.nn.functional as F
 from torch.distributions.categorical import Categorical
 
-# Neural Network Actor
+# Actor Neural Network 
 class Actor(nn.Module):
     def __init__(self, input_dim, output_dim):
         super().__init__()
@@ -21,7 +21,7 @@ class Actor(nn.Module):
         x = self.layer2(x)
         return x
     
-# Neural Network Critic
+# Critic Neural Network 
 class Critic(nn.Module):
     def __init__(self, input_dim, output_dim):
         super().__init__()
@@ -48,7 +48,6 @@ def reward_to_go(reward):
     for i in reversed(range(n)):
         rtg_array[i] = reward[i] + (rtg_array[i + 1] if i + 1 < n else 0)
     return rtg_array
-
 
 # Initializing environment and policy
 discount_factor = 0.99
@@ -132,6 +131,8 @@ for i in range(epochs):
 # Saving
 torch.save(actor, f"models/actor_model_Adam_{epochs}.pt")
 torch.save(critic, f"models/critic_model_Adam_{epochs}.pt")
+
+# Loading
 actor_model = torch.load(f"models/actor_model_Adam_{epochs}.pt", weights_only= False)
 # critic_model = torch.load(f"critic_model_Adam_{epochs}.pt", weights_only= False)
 
