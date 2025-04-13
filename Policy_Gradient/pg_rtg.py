@@ -28,6 +28,14 @@ def get_policy_dis(logits):
 def get_action(policy_dis):
     return policy_dis.sample().item()
 
+# Reward to Go implementation
+def reward_to_go(reward):
+    n = len(reward)
+    rtg_array = np.zeros_like(reward)
+    for i in reversed(range(n)):
+        rtg_array[i] = reward[i] + (rtg_array[i + 1] if i + 1 < n else 0)
+    return rtg_array
+
 def compute_loss(policy, observations, actions, rewards):
     observations = torch.FloatTensor(observations)
     actions = torch.LongTensor(actions)
@@ -74,11 +82,14 @@ for i in range(epochs):
         batch_reward.append(reward)
 
         done = terminated or truncated
+
+    batch_rtg = reward_to_go(batch_reward)
+    print(batch_reward, batch_rtg)
     
     print(f"Episode {i+1} - Steps: {len(batch_obs)}, Total Reward: {sum(batch_reward):.2f}")
     
     # Compute loss
-    loss = compute_loss(policy_model, batch_obs, batch_action, batch_reward)
+    loss = compute_loss(policy_model, batch_obs, batch_action, batch_rtg)
     print(f"Loss: {loss.item():.4f}")
     
     # Backpropagation and optimization
@@ -89,8 +100,8 @@ for i in range(epochs):
     env.close()
 
 # Saving
-torch.save(policy_model, f"policy_model_Adam_{epochs}.pt")
-policy_model = torch.load(f"policy_model_Adam_{epochs}.pt", weights_only= False)
+torch.save(policy_model, f"models/pg_rtg_model_Adam_{epochs}.pt")
+policy_model = torch.load(f"models/pg_rtg_model_Adam_{epochs}.pt", weights_only= False)
 
 # Testing
 env = gym.make("LunarLander-v3", render_mode="human")

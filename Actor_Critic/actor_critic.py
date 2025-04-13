@@ -129,12 +129,12 @@ for i in range(epochs):
     env.close()
 
 # Saving
-torch.save(actor, f"models/actor_model_Adam_{epochs}.pt")
-torch.save(critic, f"models/critic_model_Adam_{epochs}.pt")
+torch.save(actor, f"models/ac_actor_model_Adam_{epochs}.pt")
+torch.save(critic, f"models/ac_critic_model_Adam_{epochs}.pt")
 
 # Loading
-actor_model = torch.load(f"models/actor_model_Adam_{epochs}.pt", weights_only= False)
-# critic_model = torch.load(f"critic_model_Adam_{epochs}.pt", weights_only= False)
+actor_model = torch.load(f"models/ac_actor_model_Adam_{epochs}.pt", weights_only= False)
+# critic_model = torch.load(f"ac_critic_model_Adam_{epochs}.pt", weights_only= False)
 
 # Testing
 env = gym.make("LunarLander-v3", render_mode="human")
