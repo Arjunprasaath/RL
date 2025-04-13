@@ -107,7 +107,7 @@ for i in range(epochs):
     critic_loss = F.mse_loss(batch_state_value_tensor[:-1], batch_rtg_tensor)
 
     # Advantage function
-    # A(s) = R(s) + V(s`) - V(s)
+    # A(s) = R(s) + gamma * V(s`) - V(s)
     # detach state values so that actor gradient doesn't influence the critic update
     batch_advantage = batch_rtg_tensor + discount_factor * batch_state_value_tensor[1:].detach() - batch_state_value_tensor[:-1].detach()
 
@@ -130,9 +130,9 @@ for i in range(epochs):
     env.close()
 
 # Saving
-torch.save(actor, f"actor_model_Adam_{epochs}.pt")
-torch.save(critic, f"critic_model_Adam_{epochs}.pt")
-actor_model = torch.load(f"actor_model_Adam_{epochs}.pt", weights_only= False)
+torch.save(actor, f"models/actor_model_Adam_{epochs}.pt")
+torch.save(critic, f"models/critic_model_Adam_{epochs}.pt")
+actor_model = torch.load(f"models/actor_model_Adam_{epochs}.pt", weights_only= False)
 # critic_model = torch.load(f"critic_model_Adam_{epochs}.pt", weights_only= False)
 
 # Testing
@@ -148,3 +148,4 @@ while not done:
 
     observation, reward, terminated, truncated, info = env.step(action.item())
     done = terminated or truncated
+print(f"Reward: {reward}")
