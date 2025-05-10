@@ -75,13 +75,13 @@ for i in range(epochs):
     while not done:
 
         batch_obs.append(observation.copy())
-
         obs_tensor = torch.FloatTensor(observation)
 
         # Get action from actor
         logits = actor(obs_tensor)
         actor_dis = get_policy_dis(logits)
         action = get_action(actor_dis)
+        # Get state value from critic
         state_value = critic(obs_tensor).squeeze()
 
         observation, reward, terminated, truncated, info = env.step(action.item())
