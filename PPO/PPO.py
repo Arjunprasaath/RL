@@ -41,7 +41,6 @@ def get_policy_dis(logits):
 def get_action(policy_dis):
     return policy_dis.sample()
 
-
 def generalized_advantage_estimate(rewards, values, next_values, dones, gamma, lambda_gae):
     advantages = torch.zeros_like(rewards)
     last_advantage = 0.0
@@ -73,14 +72,14 @@ total_entropy = 0.0
 total_value_loss = 0.0
 total_policy_loss = 0.0
 
-env = gym.make("LunarLander-v3", render_mode= "rgb_array")
+env = gym.make("LunarLander-v3")
 # print(env.observation_space.shape, env.action_space.n) -> (8, ) 4
 actor = Actor(input_dim=env.observation_space.shape[0], output_dim=env.action_space.n)
 critic = Critic(input_dim=env.observation_space.shape[0])
 actor_optim = Adam(actor.parameters(), lr = 0.01)
 critic_optim = Adam(critic.parameters(), lr = 0.01)
 
-epochs = 200
+epochs = 5001
 
 for i in range(epochs):
     batch_obs = []
@@ -168,4 +167,27 @@ for i in range(epochs):
 
     print(f"Epoch {i}: Policy Loss: {policy_loss.item():.4f}, Value Loss: {value_loss.item():.4f}, Entropy: {entropy.item():.4f}")
 
-env.close()
+    env.close()
+
+# Saving
+torch.save(actor, f"models/PPO_actor_model_Adam_{epochs}.pt")
+torch.save(critic, f"models/PPO_critic_model_Adam_{epochs}.pt")
+
+# Loading
+actor_model = torch.load(f"models/PPO_actor_model_Adam_{epochs}.pt", weights_only= False)
+# critic_model = torch.load(f"ac_critic_model_Adam_{epochs}.pt", weights_only= False)
+
+# Testing
+env = gym.make("LunarLander-v3", render_mode="human")
+observation, info = env.reset()
+done = False
+
+while not done:
+    obs_tensor = torch.FloatTensor(observation)
+    logits = actor_model(obs_tensor)
+    policy_dis = get_policy_dis(logits)
+    action = get_action(policy_dis)
+
+    observation, reward, terminated, truncated, info = env.step(action.item())
+    done = terminated or truncated
+print(f"Reward: {reward}")
