@@ -5,7 +5,7 @@ Implementation of RL algorithms
 - [x] Reward-to-Go Policy Gradient
 - [x] Actor Critic (with advantage function)
 - [] TRPO
-- [] PPO
+- [x] PPO
 
 Important links:
 Reinforcement Learning from Human Feedback: https://rlhfbook.com
