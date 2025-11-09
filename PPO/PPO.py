@@ -64,7 +64,7 @@ def generalized_advantage_estimate(rewards, values, next_values, dones, gamma, l
 GAMMA = 0.99
 LAMBDA = 0.95
 EPSILON = 0.2
-STATE_VALUE_COEFF = 0.5
+# STATE_VALUE_COEFF = 0.5
 ENTROPY_COEFF = 0.01
 
 

@@ -1,0 +1,47 @@
+Epoch 0: Actor Loss: -36.2984, critic Loss: 1646.7627
+Epoch 1: Actor Loss: -33.9141, critic Loss: 1465.9736
+Epoch 2: Actor Loss: -36.2853, critic Loss: 1660.4714
+Epoch 3: Actor Loss: -38.4121, critic Loss: 1846.9692
+Epoch 4: Actor Loss: -36.4433, critic Loss: 1690.3695
+Epoch 5: Actor Loss: -35.9207, critic Loss: 1657.6188
+Epoch 6: Actor Loss: -30.2703, critic Loss: 1207.8564
+Epoch 7: Actor Loss: -32.9173, critic Loss: 1424.3774
+Epoch 8: Actor Loss: -36.0915, critic Loss: 1726.0739
+Epoch 9: Actor Loss: -36.9226, critic Loss: 1790.8959
+Epoch 10: Actor Loss: -34.4836, critic Loss: 1585.6437
+Epoch 11: Actor Loss: -31.7037, critic Loss: 1419.9606
+Epoch 12: Actor Loss: -35.1769, critic Loss: 1661.7939
+Epoch 13: Actor Loss: -34.9166, critic Loss: 1731.5983
+Epoch 14: Actor Loss: -34.9439, critic Loss: 1679.3760
+Epoch 15: Actor Loss: -34.9592, critic Loss: 1710.9556
+Epoch 16: Actor Loss: -34.3343, critic Loss: 1673.7400
+Epoch 17: Actor Loss: -29.7821, critic Loss: 1351.8966
+Epoch 18: Actor Loss: -30.1681, critic Loss: 1355.4292
+Epoch 19: Actor Loss: -33.3278, critic Loss: 1676.0629
+Epoch 20: Actor Loss: -36.5747, critic Loss: 1862.9204
+Epoch 21: Actor Loss: -32.6562, critic Loss: 1627.2865
+Epoch 22: Actor Loss: -29.3799, critic Loss: 1403.8300
+Epoch 23: Actor Loss: -33.5541, critic Loss: 1715.4661
+Epoch 24: Actor Loss: -28.9931, critic Loss: 1476.8403
+Epoch 25: Actor Loss: -28.1781, critic Loss: 1353.6906
+Epoch 26: Actor Loss: -31.8398, critic Loss: 1665.1039
+Epoch 27: Actor Loss: -30.4713, critic Loss: 1619.3490
+Epoch 28: Actor Loss: -30.8852, critic Loss: 1643.2094
+Epoch 29: Actor Loss: -32.8422, critic Loss: 1764.9209
+Epoch 30: Actor Loss: -31.7432, critic Loss: 1750.6260
+Epoch 31: Actor Loss: -28.4769, critic Loss: 1428.8134
+Epoch 32: Actor Loss: -28.5659, critic Loss: 1473.4514
+Epoch 33: Actor Loss: -30.1132, critic Loss: 1654.7516
+Epoch 34: Actor Loss: -32.5155, critic Loss: 1913.2253
+Epoch 35: Actor Loss: -32.9857, critic Loss: 1852.8668
+Epoch 36: Actor Loss: -30.3914, critic Loss: 1749.2688
+Epoch 37: Actor Loss: -28.7044, critic Loss: 1596.5964
+Epoch 38: Actor Loss: -28.6363, critic Loss: 1581.3027
+Epoch 39: Actor Loss: -30.7010, critic Loss: 1688.2606
+Epoch 40: Actor Loss: -32.2895, critic Loss: 1913.8336
+Epoch 41: Actor Loss: -34.1267, critic Loss: 2032.6901
+Traceback (most recent call last):
+  File "/Users/arjunprasaath/Projects/RL study/RL/humanoid_walk.py", line 95, in <module>
+    obs_tensor = torch.FloatTensor(observation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

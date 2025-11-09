@@ -1,0 +1,54 @@
+_wandb:
+    value:
+        cli_version: 0.22.3
+        e:
+            jyaav8uppbypm9rcynpk3m7ce4hkkqk7:
+                apple:
+                    ecpuCores: 6
+                    gpuCores: 14
+                    memoryGb: 18
+                    name: Apple M3 Pro
+                    pcpuCores: 5
+                    ramTotalBytes: "19327352832"
+                codePath: humanoid_walk.py
+                codePathLocal: humanoid_walk.py
+                cpu_count: 11
+                cpu_count_logical: 11
+                disk:
+                    /:
+                        total: "494384795648"
+                        used: "435354673152"
+                email: arjunprasaath@gmail.com
+                executable: /Users/arjunprasaath/Projects/RL study/RL/.venv/bin/python3
+                git:
+                    commit: 0fa76d07ffb511fa728cf1bb5ca510142208bb0b
+                    remote: https://github.com/Arjunprasaath/RL.git
+                host: Arjuns-MacBook-Pro-85.local
+                memory:
+                    total: "19327352832"
+                os: macOS-26.0.1-arm64-arm-64bit
+                program: /Users/arjunprasaath/Projects/RL study/RL/humanoid_walk.py
+                python: CPython 3.11.4
+                root: /Users/arjunprasaath/Projects/RL study/RL
+                startedAt: "2025-11-04T11:22:54.475136Z"
+                writerId: jyaav8uppbypm9rcynpk3m7ce4hkkqk7
+        m: []
+        python_version: 3.11.4
+        t:
+            "1":
+                - 1
+            "2":
+                - 1
+            "3":
+                - 13
+                - 16
+            "4": 3.11.4
+            "5": 0.22.3
+            "12": 0.22.3
+            "13": darwin-arm64
+episodes:
+    value: 10
+learning rate:
+    value: 0.0001
+total epochs:
+    value: 50000

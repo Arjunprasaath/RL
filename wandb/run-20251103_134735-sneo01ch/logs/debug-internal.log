@@ -1,0 +1,37 @@
+{"time":"2025-11-03T13:47:36.08581-06:00","level":"INFO","msg":"stream: starting","core version":"0.22.3"}
+{"time":"2025-11-03T13:47:36.556393-06:00","level":"INFO","msg":"stream: created new stream","id":"sneo01ch"}
+{"time":"2025-11-03T13:47:36.556459-06:00","level":"INFO","msg":"handler: started","stream_id":"sneo01ch"}
+{"time":"2025-11-03T13:47:36.556595-06:00","level":"INFO","msg":"stream: started","id":"sneo01ch"}
+{"time":"2025-11-03T13:47:36.556596-06:00","level":"INFO","msg":"writer: started","stream_id":"sneo01ch"}
+{"time":"2025-11-03T13:47:36.556617-06:00","level":"INFO","msg":"sender: started","stream_id":"sneo01ch"}
+{"time":"2025-11-03T16:37:29.222395-06:00","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":96778}
+{"time":"2025-11-03T16:37:29.474975-06:00","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":2}
+{"time":"2025-11-03T16:49:06.940172-06:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/arjunprasaath/Humanoid%20V5%20RL%20training/sneo01ch/file_stream","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2025-11-03T19:09:28.452223-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/arjunprasaath/Humanoid%20V5%20RL%20training/sneo01ch/file_stream\": dial tcp 35.186.228.49:443: connect: network is unreachable"}
+{"time":"2025-11-03T19:10:03.718822-06:00","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":148908}
+{"time":"2025-11-03T19:10:27.70528-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-11-03T19:10:59.800586-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-11-03T19:11:09.364528-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/arjunprasaath/Humanoid%20V5%20RL%20training/sneo01ch/file_stream\": dial tcp 35.186.228.49:443: connect: operation timed out"}
+{"time":"2025-11-03T19:11:11.567951-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/arjunprasaath/Humanoid%20V5%20RL%20training/sneo01ch/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-11-03T19:11:16.242668-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/arjunprasaath/Humanoid%20V5%20RL%20training/sneo01ch/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-11-03T19:11:26.130439-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/arjunprasaath/Humanoid%20V5%20RL%20training/sneo01ch/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-11-03T19:11:34.290955-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-11-03T19:11:42.941788-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/arjunprasaath/Humanoid%20V5%20RL%20training/sneo01ch/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-11-03T19:11:54.593699-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.105.51.76:63554->35.186.228.49:443: read: can't assign requested address"}
+{"time":"2025-11-03T19:12:13.463267-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-11-03T19:12:15.605244-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/arjunprasaath/Humanoid%20V5%20RL%20training/sneo01ch/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-11-03T19:12:49.238328-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-11-03T19:13:15.608329-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/arjunprasaath/Humanoid%20V5%20RL%20training/sneo01ch/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-11-03T19:13:49.242107-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-11-03T19:14:15.611448-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/arjunprasaath/Humanoid%20V5%20RL%20training/sneo01ch/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-11-03T19:14:49.245147-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-11-03T19:15:15.61454-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/arjunprasaath/Humanoid%20V5%20RL%20training/sneo01ch/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-11-03T19:15:49.247212-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-11-03T19:16:15.617444-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/arjunprasaath/Humanoid%20V5%20RL%20training/sneo01ch/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-11-03T19:16:49.250291-06:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-11-03T19:17:49.424519-06:00","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":2739}
+{"time":"2025-11-04T01:15:02.742917-06:00","level":"INFO","msg":"stream: closing","id":"sneo01ch"}
+{"time":"2025-11-04T01:15:03.357319-06:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-04T01:15:03.549251-06:00","level":"INFO","msg":"handler: closed","stream_id":"sneo01ch"}
+{"time":"2025-11-04T01:15:03.54985-06:00","level":"INFO","msg":"sender: closed","stream_id":"sneo01ch"}
+{"time":"2025-11-04T01:15:03.549981-06:00","level":"INFO","msg":"stream: closed","id":"sneo01ch"}

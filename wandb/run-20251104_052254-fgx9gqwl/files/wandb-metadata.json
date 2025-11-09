@@ -1,0 +1,36 @@
+{
+  "os": "macOS-26.0.1-arm64-arm-64bit",
+  "python": "CPython 3.11.4",
+  "startedAt": "2025-11-04T11:22:54.475136Z",
+  "program": "/Users/arjunprasaath/Projects/RL study/RL/humanoid_walk.py",
+  "codePath": "humanoid_walk.py",
+  "codePathLocal": "humanoid_walk.py",
+  "git": {
+    "remote": "https://github.com/Arjunprasaath/RL.git",
+    "commit": "0fa76d07ffb511fa728cf1bb5ca510142208bb0b"
+  },
+  "email": "arjunprasaath@gmail.com",
+  "root": "/Users/arjunprasaath/Projects/RL study/RL",
+  "host": "Arjuns-MacBook-Pro-85.local",
+  "executable": "/Users/arjunprasaath/Projects/RL study/RL/.venv/bin/python3",
+  "cpu_count": 11,
+  "cpu_count_logical": 11,
+  "disk": {
+    "/": {
+      "total": "494384795648",
+      "used": "435354673152"
+    }
+  },
+  "memory": {
+    "total": "19327352832"
+  },
+  "apple": {
+    "name": "Apple M3 Pro",
+    "ecpuCores": 6,
+    "pcpuCores": 5,
+    "gpuCores": 14,
+    "memoryGb": 18,
+    "ramTotalBytes": "19327352832"
+  },
+  "writerId": "jyaav8uppbypm9rcynpk3m7ce4hkkqk7"
+}

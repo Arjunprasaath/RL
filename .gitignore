@@ -4,3 +4,8 @@ venv/
 .DS_Store
 *.pt
 *.ipynb
+
+mocap_dataset/
+main.py
+notes.txt
+mujoco_train.py
